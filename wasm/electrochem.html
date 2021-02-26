@@ -10,6 +10,10 @@
       {
          font-family: Arial, Helvetica, sans-serif;
       }
+      #link {
+         position: relative;
+         bottom: 0.5em;
+      }
       .emscripten {
         padding-right: 0;
         padding: 5px;
@@ -74,11 +78,13 @@
     <div align="center">
       Water electrolysis. Dissolved hydrogen and oxygen gases (red)
       nucleate into bubbles (green)
-      </br>
-      <a href="https://github.com/cselab/aphros">github.com/cselab/aphros</a>
-      [<a href="https://github.com/cselab/aphros/tree/master/examples/107_wasm">wasm</a>]
+      <br/>
+      <a class="github-button" href="https://github.com/cselab/aphros" data-size="large" data-show-count="true" aria-label="Star cselab/aphros on GitHub">Star</a>
+      <span id="link">
+        <a href="https://github.com/cselab/aphros">github.com/cselab/aphros</a>
+        [<a href="https://github.com/cselab/aphros/tree/master/examples/107_wasm">wasm</a>]
+      </span>
     </div>
-
     <noscript>
       <div style="color:red;" class="emscripten">
         This simulation needs JavaScript
@@ -125,8 +131,8 @@
     </div>
 
     <!--<textarea class="emscripten" id="output" rows="20"></textarea>-->
-
     <script src=electrochem_defs.js></script>
     <script async src=electrochem.js></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
